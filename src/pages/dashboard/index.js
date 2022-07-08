@@ -78,7 +78,6 @@ export default function Dashboard() {
         delete oldStyle[`style-${index}`];
         setStyled(oldStyle);
         localStorage.setItem("style", JSON.stringify({ ...oldStyle }));
-        console.log(oldStyle, "ISI OLD STYLE");
       } else {
         localStorage.setItem("style", JSON.stringify({ ...oldStyle, ...obj }));
       }
